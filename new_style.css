@@ -1,0 +1,29 @@
+/*==================== Heaer =================== */
+
+  
+.dropdown-content a:hover {
+   background: #636669;
+}
+.dropdown-menu {
+   /*display: block;*/
+    background: #636669;
+    margin-top: 16px;
+    width: 210%;
+    width: 307px;
+    height: 116px;
+    margin-left: 15px;
+}
+
+
+
+a.dropdown-item {
+    color: #fff;
+    text-align: center;
+    }
+.width_80{
+  width: 80%;
+}
+
+
+   
+/* =================== End Header ================*/
