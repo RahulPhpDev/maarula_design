@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Header</title>
+</head>
+
+
+<!-- Link StyleSheet -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/resonsive.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/new_style.css">
+
+
+<style>
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: auto;
+  
+     width: 15%; 
+}
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(50%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+}
+
+
+ /* Bootstrap Lightbox using Modal */
+
+
+
+</style>
+<body>
+	<section class="exam_sec">
+    <div class="container exam_pop" >	
+	    <div class ="heading">
+			 <div>
+				<h2 class = "first_head"> Our </h2>
+				<h3  class = "second_head"> Exams </h3>
+			</div>
+			<span class="title-widget-bg"></span>
+		</div>	
+
+		<!--- ========== Popular Exam ===========-->
+		<div class="popular_exam" style = " display: inline-block;">
+			<div class = "heading">
+				<h3 class="inline exam_type_heading">  Popular  Exam </h3>
+			<span class="title-widget-bg top_line"></span>
+			<span class="title-widget-bg bottom_line"></span>
+			</div>
+		</div>	
+
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+       		 <div class="carousel-inner row w-100 mx-auto" role="listbox">	
+				<div class = "carousel-item  col-sm-3 col-lg-3 col-md-3 active">
+				   <div class="pop_exam_box">
+				   		<div class="panel panel-default">
+	                  		<div class="panel-thumbnail">
+							<div class="top_exam_section" >
+								<img src = "psd_img/images.png" class="exam_img">
+								<div class = "exam_name" >
+									<h4> NEET Model Paper 1</h4>
+								</div>
+							</div>
+
+							<div class = "exam_desc">
+								<div class = "report">
+									<div class = "left_heading">
+										Test 1
+									</div>
+									<div class="right_value">
+										40
+									</div>
+								</div>
+								<div class="exam_underline"> </div>
+								<div class = "report">
+									<div class = "left_heading">
+										Test 1
+									</div>
+									<div class="right_value">
+										120M
+									</div>
+								</div>	
+								<div class="exam_underline"> </div>
+								<div class = "report">
+									<div class = "left_heading">
+										Test 3
+									</div>
+									<div class="right_value">
+										40
+									</div>
+								</div>	
+								<div class="exam_underline"> </div>
+								<div class = "report">
+									<div class = "left_heading">
+										Test 4
+									</div>
+									<div class="right_value">
+										400
+									</div>
+								</div>	
+								<div class="submit_exam " >
+									<a> <button class= "btn btn-success orange" type="submit"> Test Test </button> </a>
+								</div>	
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+
+				<div class = "carousel-item  col-sm-3 col-lg-3 col-md-3 ">
+
+			   		<div class="panel panel-default">
+                  		<div class="panel-thumbnail">	
+							   <div class="pop_exam_box">
+
+								<div class="top_exam_section" >
+									<img src = "psd_img/images.png" class="exam_img">
+									<div class = "exam_name" >
+										<h4> NEET Model Paper 2</h4>
+									</div>
+								</div>
+
+								<div class = "exam_desc">
+									<div class = "report">
+										<div class = "left_heading">
+											Test 1
+										</div>
+										<div class="right_value">
+											40
+										</div>
+									</div>
+									<div class="exam_underline"> </div>
+									<div class = "report">
+										<div class = "left_heading">
+											Test 1
+										</div>
+										<div class="right_value">
+											120M
+										</div>
+									</div>	
+									<div class="exam_underline"> </div>
+									<div class = "report">
+										<div class = "left_heading">
+											Test 3
+										</div>
+										<div class="right_value">
+											40
+										</div>
+									</div>	
+									<div class="exam_underline"> </div>
+									<div class = "report">
+										<div class = "left_heading">
+											Test 4
+										</div>
+										<div class="right_value">
+											400
+										</div>
+									</div>	
+									<div class="submit_exam " >
+										<a> <button class= "btn btn-success orange" type="submit"> Test Test </button> </a>
+									</div>	
+									</div>
+								</div>
+							</div>
+						</div>	
+				</div>
+
+
+				<div class = "carousel-item  col-sm-3 col-lg-3 col-md-3 ">
+				 <div class="panel panel-default">
+              		<div class="panel-thumbnail">		
+					   <div class="pop_exam_box">
+						<div class="top_exam_section" >
+							<img src = "psd_img/images.png" class="exam_img">
+							<div class = "exam_name" >
+								<h4> NEET Model Paper 3</h4>
+							</div>
+						</div>
+
+						<div class = "exam_desc">
+							<div class = "report">
+								<div class = "left_heading">
+									Test 1
+								</div>
+								<div class="right_value">
+									40
+								</div>
+							</div>
+							<div class="exam_underline"> </div>
+							<div class = "report">
+								<div class = "left_heading">
+									Test 1
+								</div>
+								<div class="right_value">
+									120M
+								</div>
+							</div>	
+							<div class="exam_underline"> </div>
+							<div class = "report">
+								<div class = "left_heading">
+									Test 3
+								</div>
+								<div class="right_value">
+									40
+								</div>
+							</div>	
+							<div class="exam_underline"> </div>
+							<div class = "report">
+								<div class = "left_heading">
+									Test 4
+								</div>
+								<div class="right_value">
+									400
+								</div>
+							</div>	
+							<div class="submit_exam " >
+								<a> <button class= "btn btn-success orange" type="submit"> Test Test </button> </a>
+							</div>	
+							</div>
+						</div>	
+				     </div>
+				    </div>
+				</div>
+
+
+				<div class = "carousel-item  col-sm-3 col-lg-3 col-md-3 ">
+					<div class="panel panel-default">
+                  		<div class="panel-thumbnail">	
+						   <div class="pop_exam_box">
+
+							<div class="top_exam_section" >
+								<img src = "psd_img/images.png" class="exam_img">
+								<div class = "exam_name" >
+									<h4> NEET Model Paper 4</h4>
+								</div>
+							</div>
+
+							<div class = "exam_desc">
+								<div class = "report">
+									<div class = "left_heading">
+										Test 1
+									</div>
+									<div class="right_value">
+										40
+									</div>
+								</div>
+								<div class="exam_underline"> </div>
+								<div class = "report">
+									<div class = "left_heading">
+										Test 1
+									</div>
+									<div class="right_value">
+										120M
+									</div>
+								</div>	
+								<div class="exam_underline"> </div>
+								<div class = "report">
+									<div class = "left_heading">
+										Test 3
+									</div>
+									<div class="right_value">
+										40
+									</div>
+								</div>	
+								<div class="exam_underline"> </div>
+								<div class = "report">
+									<div class = "left_heading">
+										Test 4
+									</div>
+									<div class="right_value">
+										400
+									</div>
+								</div>	
+								<div class="submit_exam " >
+									<a> <button class= "btn btn-success orange" type="submit"> Test Test </button> </a>
+								</div>	
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class = "carousel-item  col-sm-3 col-lg-3 col-md-3 ">
+					<div class="panel panel-default">
+                  		<div class="panel-thumbnail">	
+						   <div class="pop_exam_box">
+							<div class="top_exam_section" >
+								<img src = "psd_img/images.png" class="exam_img">
+								<div class = "exam_name" >
+									<h4> NEET Model Paper 5</h4>
+								</div>
+							</div>
+
+							<div class = "exam_desc">
+								<div class = "report">
+									<div class = "left_heading">
+										Test 1
+									</div>
+									<div class="right_value">
+										40
+									</div>
+								</div>
+								<div class="exam_underline"> </div>
+								<div class = "report">
+									<div class = "left_heading">
+										Test 1
+									</div>
+									<div class="right_value">
+										120M
+									</div>
+								</div>	
+								<div class="exam_underline"> </div>
+								<div class = "report">
+									<div class = "left_heading">
+										Test 3
+									</div>
+									<div class="right_value">
+										40
+									</div>
+								</div>	
+								<div class="exam_underline"> </div>
+								<div class = "report">
+									<div class = "left_heading">
+										Test 4
+									</div>
+									<div class="right_value">
+										400
+									</div>
+								</div>	
+								<div class="submit_exam " >
+									<a> <button class= "btn btn-success orange" type="submit"> Test Test </button> </a>
+								</div>	
+							</div>
+						  </div>
+						</div>
+					</div>	
+				</div>
+
+
+				<div class = "carousel-item  col-sm-3 col-lg-3 col-md-3 ">
+					<div class="panel panel-default">
+                  		<div class="panel-thumbnail">	
+							   <div class="pop_exam_box">
+								<div class="top_exam_section" >
+									<img src = "psd_img/images.png" class="exam_img">
+									<div class = "exam_name" >
+										<h4> NEET Model Paper 6</h4>
+									</div>
+								</div>
+
+								<div class = "exam_desc">
+									<div class = "report">
+										<div class = "left_heading">
+											Test 1
+										</div>
+										<div class="right_value">
+											40
+										</div>
+									</div>
+									<div class="exam_underline"> </div>
+									<div class = "report">
+										<div class = "left_heading">
+											Test 1
+										</div>
+										<div class="right_value">
+											120M
+										</div>
+									</div>	
+									<div class="exam_underline"> </div>
+									<div class = "report">
+										<div class = "left_heading">
+											Test 3
+										</div>
+										<div class="right_value">
+											40
+										</div>
+									</div>	
+									<div class="exam_underline"> </div>
+									<div class = "report">
+										<div class = "left_heading">
+											Test 4
+										</div>
+										<div class="right_value">
+											400
+										</div>
+									</div>	
+									<div class="submit_exam " >
+										<a> <button class= "btn btn-success orange" type="submit"> Test Test </button> </a>
+									</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+				</div> 
+			</div>	
+				<a class="carousel-control-prev hidden_sm" href="#myCarousel" role="button" data-slide="prev">
+	            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	            <span class="sr-only">Previous</span>
+	        </a>
+	        <a class="carousel-control-next text-faded hidden_sm" href="#myCarousel" role="button" data-slide="next">
+	            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	            <span class="sr-only">Next</span>
+	        </a>
+	    </div>
+
+	<!-- 	<div style="width:100%;margin-top:60px">
+			<div class="" style="border-bottom: 1px dashed #ddd"></div>
+		</div> -->
+	</div>
+</section>
+
+</header>
+</body>
+<script type="text/javascript" src = "js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script type="text/javascript" src = "js/bootstrap.min.js"></script>
+<script language="javascript">
+$('#myCarousel').on('slide.bs.carousel', function (e) {  
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 4;
+    var totalItems = $('.carousel-item').length;
+    
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            }
+            else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+        }
+    }
+});
+
+
+  // $('#myCarousel').carousel({ 
+  //               interval: 2000
+  //       });
+
+
+  $(document).ready(function() {
+/* show lightbox when clicking a thumbnail */
+    $('a.thumb').click(function(event){
+      event.preventDefault();
+      var content = $('.modal-body');
+      content.empty();
+        var title = $(this).attr("title");
+        $('.modal-title').html(title);        
+        content.html($(this).html());
+        $(".modal-profile").modal({show:true});
+    });
+
+  });
+  </script>
